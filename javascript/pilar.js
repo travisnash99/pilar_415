@@ -1,11 +1,20 @@
 //Dependecies established:
 
-var express = require("express"); 
+var express = require("express");
 var path = require('path');
 var bodyParser = require("body-parser");
+//var mysql = require("mysql");
 
-var app = express(); 
+var app = express();
 var PORT = 8080;
+
+// var connection = mysql.createConnection({
+//   host: "localhost",
+//   port: 3306,
+//   user: "root",
+//   password: "",
+//   database: "pilar"
+// })
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
@@ -16,6 +25,10 @@ app.use(bodyParser.json({
   type: "application/vnd.api+json"
 }));
 
+//Listen to the port
+app.listen(PORT, function() {
+  console.log("App listening on PORT " + PORT);
+});
 
 //A list of preReservations to populate this page.
 var preReservations = [{
@@ -23,7 +36,7 @@ var preReservations = [{
   name: "Yoda",
   email: "yoda@me.com",
   phone: "555-555-5555",
-  id: "Eat, I shall" 
+  id: "Eat, I shall"
 }, {
   //routeName: "",
   name: "Ash Ketchum",
@@ -38,67 +51,110 @@ var preReservations = [{
   id: "not the table you're looking for"
 }];
 
-//Listen to the port
-app.listen(PORT, function() {
-  console.log("App listening on PORT " + PORT);
+var tableArray = [
+
+
+]; 
+
+var waitlistArray = [
+
+
+]; 
+
+app.get("/reserve", function(req, res){
+  res.end("reserve.html"); 
+  //console.log(req.body);
+}); 
+
+app.post("/reserve", function(req, res){
+  var newReservation = req.body
+  console.log(req.body); 
+  console.log(newReservation);
+  if (tableArray.length < 5) {
+  tableArray.push(newReservation); 
+} else {
+  waitlistArray.push(newReservation);
+  }
 });
 
 
-var checkReservations = function() {
-  var reservations = [];
-  var waitlist = [];
-  // if reservations over 5, push to waitlist array
-  
-}
+app.get("/api/table", function(req, res){
+  res.json(tableArray); 
+}); 
 
-var viewReservations = function(){
- 	 connection.query("SELECT * FROM products", function(err, res) {
-    var productsArray = [];
-
-        for (var i = 0;i<res.length;i++){
-          //console.log(res[i].product_name + ' ' + '(id: ' + res[i].item_id + ')' + ' - ' + 'count: ' + res[i].stock_quantity);
-          res[i].name = res[i].product_name;
-          productsArray.push(res[i]);
-          console.log(productsArray);
-        }
-
-    if (err) throw err;
-   });
-}
+app.get("/api/waitlist", function(req, res){
+  res.json(waitlistArray); 
+}); 
 
 
-app.get("/", function(req, res) {
-  //res.send("Welcome to the Home Page!");
-  res.sendFile(path.join(__dirname, "index.html"));
-});
-/*app.get("/reserve", function(req, res) {
-  // res.send("Welcome to the Home Page!")
-  res.sendFile(path.join(__dirname, "reserve.html"));
-});
+// // Search for Specific Character (or all characters) - provides JSON
+// app.get("/api/:preReservations?", function(req, res) {
+// 	console.log(preReservations);
+//   return res.json(preReservations);
+// });
 
-app.get("/table", function(req, res) {
-  // res.send("Welcome to the Home Page!")
-  res.sendFile(path.join(__dirname, "table.html"));
-});
+//Function that stores the values we get from the HTML 
+//ex tableAraray.push($(".name).val().trim()); 
+//those values are pushed into one of two arrays. Waitlist & Table
 
-app.get("/api/table", function(req, res) {
-  // res.send("Welcome to the Home Page!")
-  res.sendFile(path.join(__dirname, ""));
-});
 
-app.get("/api/waitlist", function(req, res) {
-  // res.send("Welcome to the Home Page!")
-  res.sendFile(path.join(__dirname, "indedx.html"));
-});*/
+
+
+// var checkReservations = function() {
+//   var reservations = [];
+//   var waitlist = [];
+//   // if reservations over 5, push to waitlist array
+
+// }
+
+// // var viewReservations = function(){
+// //  	 connection.query("SELECT * FROM reservations", function(err, res) {
+// //     var reservationsArray = [];
+
+//         for (var i = 0;i<res.length;i++){
+//           //console.log(res[i].product_name + ' ' + '(id: ' + res[i].item_id + ')' + ' - ' + 'count: ' + res[i].stock_quantity);
+//           reservationsArray.push(res[i]);
+//           console.log(reservationsArray);
+//         }
+
+//     if (err) throw err;
+//    });
+// }
+
+// viewReservations();
+//
+// app.get("/", function(req, res) {
+//   // res.send("Welcome to the Home Page!")
+//   res.sendFile(path.join(__dirname, "index.html"));
+// });
+// app.get("/reserve", function(req, res) {
+//   // res.send("Welcome to the Home Page!")
+//   res.sendFile(path.join(__dirname, "reserve.html"));
+// });
+//
+// app.get("/table", function(req, res) {
+//   // res.send("Welcome to the Home Page!")
+//   res.sendFile(path.join(__dirname, "table.html"));
+// });
+//
+// app.get("/api/table", function(req, res) {
+//   // res.send("Welcome to the Home Page!")
+//   res.sendFile(path.join(__dirname, ""));
+// });
+//
+// app.get("/api/waitlist", function(req, res) {
+//   // res.send("Welcome to the Home Page!")
+//   res.sendFile(path.join(__dirname, "indedx.html"));
+// });
 
 
 
 //User Input is submitted on "/reserve", the response is an alert informing you whether one is on the main or wait list.
-// The User input submits 
+// The User input submits
 //It then displays the number for the website and the customerID
 
-//there's 5 links: "/" for the home page 
-// "/tables" displays the table page 
+//there's 5 links: "/" for the home page
+// "/tables" displays the table page
 // "/reserve" displays the reserve page
 
 // "/api/tables" displays an object with all the arrays
@@ -107,4 +163,4 @@ app.get("/api/waitlist", function(req, res) {
 
 
 //There's going be a get request that's submitted.
-//Store name, phone number, email, & ID 
+//Store name, phone number, email, & ID
