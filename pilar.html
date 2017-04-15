@@ -1,144 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"
-        />
-        <title>Starter Template - Materialize</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pilar</title>
+    <!--CSS Sheets-->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Satisfy|Bree+Serif|Candal|PT+Sans">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
 
-        <!-- CSS  -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"
-        />
-        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"
-        />
-    </head>
-
-    <body>
-        <nav class="light-blue lighten-1" role="navigation">
-            <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#">Navbar Link</a></li>
-                </ul>
-
-                <ul id="nav-mobile" class="side-nav">
-                    <li><a href="#">Navbar Link</a></li>
-                </ul>
-                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-            </div>
-        </nav>
-        <div class="section no-pad-bot" id="index-banner">
-            <div class="container">
-                <br><br>
-                <h1 class="header center orange-text">Starter Template</h1>
-                <div class="row center">
-                    <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-                </div>
-                <div class="row center">
-                    <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
-                </div>
-                <br><br>
-
-            </div>
-        </div>
-
-
-        <div class="container">
-            <div class="section">
-
-                <!--   Icon Section   -->
-                <div class="row">
-                    <div class="col s12 m4">
-                        <div class="icon-block">
-                            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-                            <h5 class="center">Speeds up development</h5>
-
-                            <p class="light">We did most of the heavy lifting for you to provide a default
-                                stylings that incorporate our custom components. Additionally,
-                                we refined animations and transitions to provide a smoother
-                                experience for developers.</p>
-                        </div>
-                    </div>
-
-                    <div class="col s12 m4">
-                        <div class="icon-block">
-                            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-                            <h5 class="center">User Experience Focused</h5>
-
-                            <p class="light">By utilizing elements and principles of Material Design, we
-                                were able to create a framework that incorporates components
-                                and animations that provide more feedback to users. Additionally,
-                                a single underlying responsive system across all platforms
-                                allow for a more unified user experience.</p>
-                        </div>
-                    </div>
-
-                    <div class="col s12 m4">
-                        <div class="icon-block">
-                            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-                            <h5 class="center">Easy to work with</h5>
-
-                            <p class="light">We have provided detailed documentation as well as specific
-                                code examples to help new users get started. We are also
-                                always open to feedback and can answer any questions a
-                                user may have about Materialize.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <br><br>
-
-            <div class="section">
-
-            </div>
-        </div>
-
-        <footer class="page-footer orange">
-            <div class="container">
-                <div class="row">
-                    <div class="col l6 s12">
-                        <h5 class="white-text">Company Bio</h5>
-                        <p class="grey-text text-lighten-4">We are a team of college students working on this project like
-                            it's our full time job. Any amount would help support and
-                            continue development on this project and is greatly appreciated.</p>
-
-
-                    </div>
-                    <div class="col l3 s12">
-                        <h5 class="white-text">Settings</h5>
-                        <ul>
-                            <li><a class="white-text" href="#!">Link 1</a></li>
-                            <li><a class="white-text" href="#!">Link 2</a></li>
-                            <li><a class="white-text" href="#!">Link 3</a></li>
-                            <li><a class="white-text" href="#!">Link 4</a></li>
-                        </ul>
-                    </div>
-                    <div class="col l3 s12">
-                        <h5 class="white-text">Connect</h5>
-                        <ul>
-                            <li><a class="white-text" href="#!">Link 1</a></li>
-                            <li><a class="white-text" href="#!">Link 2</a></li>
-                            <li><a class="white-text" href="#!">Link 3</a></li>
-                            <li><a class="white-text" href="#!">Link 4</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright">
+<body>
+    <!--banner-->
+    <section id="banner">
+        <div class="bg-color">
+            <header id="header">
                 <div class="container">
-                    Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="#about">About</a>
+                        <a href="#contact">Book a table</a>
+                    </div>
+                    <!-- Use any element to open the sidenav -->
+                    <span onclick="openNav()" class="pull-right menu-icon">☰</span>
+                </div>
+            </header>
+            <div class="container">
+                <div class="row">
+                    <div class="inner text-center">
+                        <h1 class="logo-name">Pilar</h1>
+                        <h2>A rum bar inspired by Hemingway!</h2>
+                    </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </section>
+    <!-- / banner -->
+    <!--about-->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center marb-35">
+                    <h1 class="header-h">Taste of the Caribbean</h1>
+                    <p class="header-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                        <br>nibh euismod tincidunt ut laoreet dolore magna aliquam.
+                    </p>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="about-info">
+                            <h2 class="heading">vel illum qui dolorem eum</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero impedit inventore culpa vero
+                                accusamus in nostrum dignissimos modi, molestiae. Autem iusto esse necessitatibus ex corporis
+                                earum quaerat voluptates quibusdam dicta!</p>
+                            <div class="details-list">
+                                <ul>
+                                    <li><i class="fa fa-check"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                                    <li><i class="fa fa-check"></i>Quisque finibus eu lorem quis elementum</li>
+                                    <li><i class="fa fa-check"></i>Vivamus accumsan porttitor justo sed </li>
+                                    <li><i class="fa fa-check"></i>Curabitur at massa id tortor fermentum luctus</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <img src="img/hemboat.png"alt="" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </section>
+    <!--/about-->
 
 
-        <!--  Scripts-->
-        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script src="js/materialize.js"></script>
-        <script src="js/init.js"></script>
+    <!-- contact -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="header-h">Book Your table</h1>
+                    <p class="header-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                        <br>nibh euismod tincidunt ut laoreet dolore magna aliquam.
+                    </p>
+                </div>
+            </div>
+            <div class="row msg-row">
+                <div class="col-md-4 col-sm-4 mr-15">
+                    <div class="media-2">
+                        <div class="media-left">
+                            <div class="contact-phone bg-1 text-center"><span class="phone-in-talk fa fa-phone"></span></div>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="dark-blue regular">Phone Numbers</h4>
+                            <p class="light-blue regular alt-p">512-555-5555 - <span class="contacts-sp">Phone Booking</span></p>
+                        </div>
+                    </div>
+                    <div class="media-2">
+                        <div class="media-left">
+                            <div class="contact-email bg-14 text-center"><span class="hour-icon fa fa-clock-o"></span></div>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="dark-blue regular">Opening Hours</h4>
+                            <p class="light-blue regular alt-p"> Monday to Saturday 09.00 A.M. - 10:00 P.M.</p>
+                            <p class="light-blue regular alt-p">
+                                and Sunday 10:00 A.M. - 03.00 P.M.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-8">
+                    <form action="" method="post" role="form" class="contactForm">
+                        <div id="sendmessage">Your booking request has been sent. Thank you!</div>
+                        <div id="errormessage"></div>
+                        <div class="col-md-6 col-sm-6 contact-form pad-form">
+                            <div class="form-group label-floating is-empty">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars"
+                                />
+                                <div class="validation"></div>
+                            </div>
 
-    </body>
+                        </div>
+                        <div class="col-md-6 col-sm-6 contact-form">
+                            <div class="form-group">
+                                <input type="date" class="form-control label-floating is-empty" name="date" id="date" placeholder="Date" data-rule="required"
+                                    data-msg="This field is required" />
+                                <div class="validation"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 contact-form pad-form">
+                            <div class="form-group">
+                                <input type="email" class="form-control label-floating is-empty" name="email" id="email" placeholder="Your Email" data-rule="email"
+                                    data-msg="Please enter a valid email" />
+                                <div class="validation"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 contact-form">
+                            <div class="form-group">
+                                <input type="time" class="form-control label-floating is-empty" name="time" id="time" placeholder="Time" data-rule="required"
+                                    data-msg="This field is required" />
+                                <div class="validation"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 contact-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control label-floating is-empty" name="phone" id="phone" placeholder="Phone" data-rule="required"
+                                    data-msg="This field is required" />
+                                <div class="validation"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 contact-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control label-floating is-empty" name="people" id="people" placeholder="People" data-rule="required"
+                                    data-msg="This field is required" />
+                                <div class="validation"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 contact-form">
+                            <div class="form-group label-floating is-empty">
+                                <textarea class="form-control" name="message" rows="5" rows="3" data-rule="required" data-msg="Please write something for us"
+                                    placeholder="Message"></textarea>
+                                <div class="validation"></div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-12 btnpad">
+                            <div class="contacts-btn-pad">
+                                <button class="contacts-btn">Book Table</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / contact -->
+    <!-- footer -->
+    <footer class="footer text-center">
+        <div class="footer-top">
+            <div class="row">
+                <div class="col-md-offset-3 col-md-6 text-center">
+                    <div class="widget">
+                        <h4 class="widget-title">Delicious</h4>
+                        <address>Thompson Conference Center<br>Austin, TX 78756</address>
+                        <div class="social-list">
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </div>
+                        <p class="copyright clear-float">
+                            © JFKT Enterprises. All Rights Reserved
+                            <div class="credits">
+                                <!-- 
+                                    All the links in the footer should remain intact. 
+                                    You can delete the links only if you purchased the pro version.
+                                    Licensing information: https://bootstrapmade.com/license/
+                                    Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Delicious
+                                -->
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- / footer -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="contactform/contactform.js"></script>
+
+</body>
 
 </html>
