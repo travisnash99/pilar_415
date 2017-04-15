@@ -177,6 +177,38 @@
                 </div>
             </div>
         </div>
+     <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="contactform/contactform.js"></script>
+
+        <script type="text/javascript">
+            console.log(window.location.origin);
+            console.log(window.location);
+
+	            var queryURL = "localhost8080" + "/api/table"; 
+
+	            $.ajax({
+                        url: queryURL, 
+                        method: 'GET'
+                    }).done(function(response) {
+                            // Loop through and display each of the customers
+				        for (var i=0; i<response.length; i++){
+
+					// Create the HTML Well (Section) and Add the table content for each reserved table
+					var tableSection = $("<div>");
+					tableSection.addClass('well');
+					tableSection.attr('id', 'tableWell-' + i+1)
+					$('#tableSection').append(tableSection);
+
+					var tableNumber = i + 1;
+					// Then display the remaining fields in the HTML (Section Name, Date, URL)
+					$("#tableWell-"+ i+1).append('<h2><span class="label label-primary">' + tableNumber + "</span> | " + tableArray[i].id + "</h2>");
+				}
+                    })
+            </script>
     </section>
     <!-- / contact -->
     <!-- footer -->
@@ -209,12 +241,7 @@
     </footer>
     <!-- / footer -->
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.mixitup.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="contactform/contactform.js"></script>
+  
 
 </body>
 
