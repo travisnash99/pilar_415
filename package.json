@@ -1,0 +1,19 @@
+{
+  "name": "pilar_415",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pilar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/travisnash99/pilar_415.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/travisnash99/pilar_415/issues"
+  },
+  "homepage": "https://github.com/travisnash99/pilar_415#readme"
+}
