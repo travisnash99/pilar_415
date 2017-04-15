@@ -5,7 +5,7 @@ body {
     line-height: 1.52;
     color: #717f86;
     font-size: 16px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', cursive;
     font-weight: 400;
     overflow-x: hidden; 
 }
@@ -36,7 +36,7 @@ table {
 #banner h2{
     font-family: 'Lobster', cursive;
     font-size: 45px;
-    color: #FFB03B;
+    color:#ffcc4f;
 }
 #banner p{
     font-family: 'Lobster', cursive;
@@ -50,7 +50,7 @@ table {
     font-family: 'Lobster', cursive;
     font-size: 65px;
     margin-top: 140px;
-    color: #FFB03B;
+    color:#ffcc4f;
 }
 .sidenav {
     height: 100%;
@@ -95,9 +95,9 @@ table {
 }
 
 .header-h {
-    color: #FFB03B;
+    color:#ffcc4f;
     font-size: 46px;
-    font-family: 'Satisfy', sans-serif;
+    font-family: 'Lobster', cursive;
     font-weight: 300;
 }
 .header-p {
@@ -193,13 +193,13 @@ table {
     height: auto;
 }
 .contacts-btn {
-    background-color:  #FFB03B !important;
+    background-color: #ffcc4f !important;
     color: #ffffff !important;
     width: 170px;
     height: 54px;
     border-radius: 3px;
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', cursive;
     font-weight: normal;
     text-transform: capitalize;
     border: 0px;
@@ -247,8 +247,8 @@ table {
 
 
 .heading{
-    font-family: 'Satisfy', sans-serif;
-    color: #FFB03B;
+    font-family: 'Lobster', cursive;
+    color:#ffcc4f;
     font-size: 24px;
 }
 .marb-35{
@@ -259,11 +259,11 @@ table {
 }
 .details-list ul li i {
     margin-right: 10px;
-    color: #ffb03b;
+    color:#ffcc4f;
 }
 #about img
 {
-    border: 5px solid rgb(255, 176, 59);
+    border: 5px solid #ffcc4f;
     border-radius: 2px;
 }
 #event{
@@ -287,13 +287,13 @@ table {
     overflow: auto;
 }
 .content-holder h2 {
-    color: #FFB03B;
+    color:#ffcc4f;
     font-size: 32px;
     padding-bottom: 15px;
-    font-family: 'Satisfy', sans-serif;
+    font-family: 'Lobster', cursive;
 }
 .content-holder address strong {
-    color: #FFB03B;
+    color:#ffcc4f;
     padding: 10px 0px;
 }
 .details-text p {
@@ -303,9 +303,9 @@ table {
     font-weight: 300;
 }
 .btn-read-more {
-    background: #FFB03B;
+    background:#ffcc4f;
     padding: 7px 19px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', cursive;
     font-size: 12px;
     line-height: 17px;
     font-weight: 400;
@@ -333,7 +333,7 @@ table {
     font-family: Montserrat,arial;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #FFB03B;
+    color:#ffcc4f;
 }
 .menu-restaurant .menu-line {
     position: absolute;
@@ -352,7 +352,7 @@ table {
     display: block;
     float: left;
     color: #B1B1B1;
-    font-family: Satisfy,'Open Sans',arial;
+    font-family: Lobster,'Open Sans',arial;
     font-size: 1.2rem;
 }
 .menu-restaurant span.clearfix {
@@ -360,9 +360,9 @@ table {
     display: block;
 }
 .gallery-trigger ul li a.active, .gallery-trigger ul li a:hover {
-    background: #FFB03B;
+    background:#ffcc4f;
     color: #fff;
-    border: 1px solid #FFB03B;
+    border: 1px solid#ffcc4f;
 }
 .gallery-trigger ul li {
     display: inline-block;
@@ -402,9 +402,9 @@ table {
 }
 .footer .widget-title{
     padding-bottom: 20px;
-    font-family: 'Satisfy', sans-serif;
+    font-family: "Lobster", cursive;
     font-size: 44px;
-    color: #FFB03B;
+    color:#F80071;
 }
 .footer .widget, .footer address {
     color: #999;
@@ -420,12 +420,12 @@ table {
     display: inline-block;
 }
 #contact{
-    background-color: rgba(221, 221, 221, 0.33);
+    background-color: #71EA96;
 }
 .footer .social-list a {
     font-size: 32px;
     font-weight: normal;
-    color: #fff;
+    color:#F80071;
     text-transform: uppercase;
     margin: 0 5px;
 }
