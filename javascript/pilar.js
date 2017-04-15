@@ -1,8 +1,8 @@
 //Dependecies established:
-
-var express = require("express");
+const fs = require('fs');
+var express = require('express');
 var path = require('path');
-var bodyParser = require("body-parser");
+var bodyParser = require('body-parser');
 //var mysql = require("mysql");
 
 var app = express();

@@ -3,7 +3,7 @@
 body {
 	font-size: 15px;
     line-height: 1.52;
-    color: #717f86;
+    color: black;
     font-size: 16px;
 	font-family: "Josefin Sans", sans-serif;
     font-weight: 600;
@@ -96,13 +96,13 @@ table {
 }
 
 .header-h {
-    color:#ffcc4f;
+    color:#F80071;
     font-size: 46px;
     font-family: 'Lobster Two', cursive;
     font-weight: 300;
 }
 .header-p {
-    color: #9699a6;
+    color: black;
     font-size: 16px;
 }
 .msg-row {
@@ -125,13 +125,13 @@ table {
     margin-top: 18px;
 }
 .bg-1 {
-    background-color: #fecc17;
+    background-color: #ffcc4f;
     width: 70px;
     height: 70px;
     border-radius: 50%;
 }
 .bg-14 {
-    background-color: #ccdb38;
+    background-color: #F80071;
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -142,7 +142,7 @@ table {
     margin-top: 0;
 }
 .light-blue {
-    color: #9699a6;
+    color: black;
     font-size: 16px;
     margin-bottom: 1px;
 }
@@ -167,10 +167,10 @@ table {
 }
 .form-control, .form-group .form-control {
     border: 0;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#009688), to(#009688)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
-    background-image: -webkit-linear-gradient(#009688, #009688), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
-    background-image: -o-linear-gradient(#009688, #009688), -o-linear-gradient(#D2D2D2, #D2D2D2);
-    background-image: linear-gradient(#009688, #009688), linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(black)), -webkit-gradient(linear, left top, left bottom, from(black), to(black));
+    background-image: -webkit-linear-gradient(black, black), -webkit-linear-gradient(black, black);
+    background-image: -o-linear-gradient(black, black), -o-linear-gradient(black, black);
+    background-image: linear-gradient(black, black), linear-gradient(black, black);
     -webkit-background-size: 0 2px, 100% 1px;
     background-size: 0 2px, 100% 1px;
     background-repeat: no-repeat;
@@ -250,7 +250,7 @@ table {
 
 .heading{
     font-family: 'Lobster Two', cursive;
-    color:#ffcc4f;
+    color:#F80071;
     font-size: 24px;
 }
 .marb-35{
@@ -268,10 +268,7 @@ table {
     border: 5px solid #F80071;
     border-radius: 2px;
 }
-#event{
-    background: url('../img/res02.jpg') no-repeat;
-    background-size: cover;
-}
+
 .left-images img {
     height: 308px;
     width: 100%;

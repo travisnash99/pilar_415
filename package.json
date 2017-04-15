@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/travisnash99/pilar_415#readme",
   "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
     "materialize": "^1.0.0",
     "materialize-css": "^0.98.2"
   }
