@@ -1,9 +1,14 @@
 //Dependecies established:
-
-var express = require("express");
+const fs = require('fs');
+var express = require('express');
 var path = require('path');
+<<<<<<< HEAD:js/pilar.js
 var bodyParser = require("body-parser");
 var mysql = require("mysql");
+=======
+var bodyParser = require('body-parser');
+//var mysql = require("mysql");
+>>>>>>> 76aa4ec51b08e6772caae18ba6df5ad9c5f64e03:javascript/pilar.js
 
 var app = express();
 var PORT = 8080;
