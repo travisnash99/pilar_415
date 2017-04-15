@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/travisnash99/pilar_415/issues"
   },
-  "homepage": "https://github.com/travisnash99/pilar_415#readme"
+  "homepage": "https://github.com/travisnash99/pilar_415#readme",
+  "dependencies": {
+    "materialize": "^1.0.0",
+    "materialize-css": "^0.98.2"
+  }
 }
