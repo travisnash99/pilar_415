@@ -27,7 +27,7 @@ table {
 #banner{
     background: url(../img/bar.jpg) no-repeat center top;
     background-size: cover;
-    min-height: 630px;
+    min-Beight: 630px;
 }
 .bg-color{
     background-color: RGBA(0, 0, 0, 0.61);
